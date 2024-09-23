@@ -1,0 +1,63 @@
+/* Dashboard.css */
+
+.dashboard-container {
+    background-color: #f8f9fa; /* Light background color for the whole page */
+    font-family: 'Arial', sans-serif; /* Clean and modern font */
+    max-width: 1200px; /* Limit max width for larger screens */
+    margin: auto; /* Center the container */
+    padding: 20px;
+}
+
+.dashboard-title {
+    color: #343a40; /* Darker text color for contrast */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 2.5rem; /* Larger heading size */
+    text-align: center; /* Center the title */
+}
+
+.dashboard-table {
+    background-color: #ffffff; /* White background for the table */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.dashboard-table thead {
+    background-color: #007bff; /* Bootstrap primary color for header */
+    color: #ffffff; /* White text for header */
+}
+
+.dashboard-table th, .dashboard-table td {
+    text-align: center; /* Center text in table cells */
+    vertical-align: middle; /* Center content vertically */
+    padding: 15px; /* Padding for table cells */
+}
+
+.dashboard-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row color for readability */
+}
+
+.dashboard-table tr:hover {
+    background-color: #e9ecef; /* Highlight row on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+@media (max-width: 768px) {
+    .dashboard-title {
+        font-size: 2rem; /* Smaller heading size on mobile */
+    }
+
+    .dashboard-table th, .dashboard-table td {
+        padding: 10px; /* Smaller padding for mobile */
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .dashboard-table {
+        font-size: 0.8rem; /* Further reduce font size for small screens */
+    }
+
+    .dashboard-title {
+        font-size: 1.8rem; /* Even smaller heading on very small screens */
+    }
+}

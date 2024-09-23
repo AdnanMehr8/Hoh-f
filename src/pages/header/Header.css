@@ -1,0 +1,44 @@
+.navbar {
+    background: #343a40;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+.navbar .nav-link {
+    color: #fff !important;
+    text-decoration: none !important;
+    margin-right: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .navbar .nav-link {
+        margin-right: 10px; /* Decrease margin for smaller screens */
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        display: flex; /* Ensure navbar is flexible on smaller screens */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .navbar .nav-link {
+        margin: 5px 0; /* Adjust margin for vertical stacking */
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1em; /* Further adjust font size */
+    }
+}

@@ -1,0 +1,83 @@
+/* CenterForm.css */
+
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 20px; /* Added padding for smaller screens */
+}
+
+.center-form form {
+    max-width: 400px; /* Maximum width for larger screens */
+    width: 100%; /* Full width on smaller screens */
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.center-form form label {
+    font-weight: bold;
+}
+
+.center-form form .form-control {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.center-form form .btn {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    width: 100%; /* Full width for buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+}
+
+.center-form form .btn:hover {
+    background-color: #166fe5;
+}
+
+.error-message {
+    color: #d9534f;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    text-align: center; /* Center the error message text */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .center-form {
+        height: auto; /* Allow for auto height on smaller screens */
+    }
+
+    .center-form form {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .center-form form .form-control {
+        padding: 8px; /* Smaller padding for inputs */
+    }
+
+    .center-form form .btn {
+        padding: 8px 0; /* Smaller padding for buttons */
+    }
+}
+
+@media (max-width: 576px) {
+    .center-form form {
+        max-width: 100%; /* Full width on very small screens */
+    }
+
+    .center-form form .btn {
+        padding: 7px 0; /* Further reduce button padding */
+    }
+}
